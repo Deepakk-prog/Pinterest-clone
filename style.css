@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+html body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh;
+    
+    
+}
+
+.left-nav{
+    display: flex;
+    list-style: none;
+}
+.left-nav li{
+    margin-left: 45px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.left-nav li:hover{
+    margin-left: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+.right-nav li{
+    margin-left: 30px;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.right-nav{
+    list-style: none;
+    display: flex;  
+}
+
+input{
+    width: 50%;
+    height: 6vh;
+    margin-left: 28%;
+    border-radius: 25px;
+    position: absolute;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: grey;
+    z-index: 11;
+
+}
+.main{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.images{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;  
+    
+}
+
+
+#logo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+}
+
+.pin_container{
+    width: 1400px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    columns: 5;
+    column-gap: 20px;
+    border-radius: 30px;
+    
+}
+.pin_container .items{
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.pin_container .items img{
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.fa-solid{
+    font-size: 25px;
+    color: black;
+}
+.fa-solid:hover{
+    font-size: 25px;
+    color: blue;
+}
+footer{
+    height: 200px;
+    width: 95.6%;
+    margin-left: 30px;
+    background-color: grey;
+    border-radius: 20px;
+    bottom: 0;
+
+}
+
+#name{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color:white;
+    text-shadow: 2px 2px 10px rgb(28, 28, 28);
+    z-index: 5;
+}
+
+#overlays{
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    visibility: hidden;
+}
+.suggetions{
+    position: absolute;
+    height: max-content auto;
+    width: 50%;
+    top: 80px;
+    border-radius: 20px;
+    z-index: 14;
+    left: 30%;
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    visibility: visible;
+}
+#suggest{
+    padding: 10px;
+    
+    
+}
